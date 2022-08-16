@@ -3,10 +3,12 @@ import { Box, Container, Flex, Heading, List, ListItem, Text, UnorderedList } fr
 import CustomIcon from './CustomIcon';
 
 interface Props {
-  userData: User.UserData;
+  data: User.UserData;
 }
 
-const About: React.FC<Props> = ({ userData }) => {
+const About: React.FC<Props> = (props) => {
+  const userData = props.data;
+
   return (
     <Box minH={"50vh"} h={"100vh"} bg={"brand.300"} id="about" textColor={"brand.500"}>
       <Box w={["85%", "80%"]} m={"auto"} py={[10, 10, 20, 100]}>

@@ -19,7 +19,7 @@ export default function Home(props: Props) {
     <>
       <Layout>
         <LandingPage />
-        <About userData={props.data[0]}/>
+        <About data={props.data[0]}/>
       </Layout>
     </>
   );
