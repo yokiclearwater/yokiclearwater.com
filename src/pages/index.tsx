@@ -39,7 +39,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return {
     props: {
       mongo: process.env.MONGO_URI,
-      baseURL: process.env.BASE_URL,
+      baseURL: process.env.URL,
       data: data,
     },
   };
