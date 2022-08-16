@@ -5,9 +5,7 @@ import data from "./../data/about";
 const connectMongo = async () => {
   const mongoURI = process.env.MONGO_URI || "";
 
-  if (mongoose.connections[0].readyState) {
-    console.log("Mongoose is already connected");
-
+  if (mongoose.connections[0].readyState === 1) {
     return;
   }
 

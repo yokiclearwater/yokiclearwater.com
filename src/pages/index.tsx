@@ -12,19 +12,17 @@ import api from "../utils/api";
 import axios from "axios";
 
 interface Props {
-  mongo: string;
-  baseURL: string;
-  data: any;
+  data: User.UserData[];
 }
 
 export default function Home(props: Props) {
-  console.log(props);
+  const userData = props.data[0];
 
   return (
     <>
-      <Box fontSize={"5xl"} textColor={"green.600"}>{props.mongo}</Box>
-      <Box fontSize={"5xl"} textColor={"red.600"}>{props.baseURL}</Box>
-      <Box fontSize={"5xl"} textColor={"blue."}>{props.data.name}</Box>
+      <Box fontSize={"5xl"} textColor={"green.600"}>{userData.description}</Box>
+      {/* <Box fontSize={"5xl"} textColor={"red.600"}>{props.URL}</Box>
+      <Box fontSize={"5xl"} textColor={"blue."}>{props.data.name}</Box> */}
       {/* <Layout>
         <LandingPage />
         <About data={props.data[0]}/>
@@ -33,41 +31,23 @@ export default function Home(props: Props) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { data } = await api.get("api/hello");
-  console.log(data);
-  return {
-    props: {
-      mongo: process.env.MONGO_URI,
-      baseURL: process.env.URL,
-      data: data,
-    },
-  };
-}
-
-
-
-// export const getStaticProps: GetServerSideProps = async () => {
-//   // const data = await api.get("/api/hello").then(res => res.data);
-//   // const hello = await res.json();
-//   // console.log(hello);
-//   const res = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
-//   const stringRes = JSON.stringify(res);
+// export const getServerSideProps: GetServerSideProps = async (context) => {
+//   const { data } = await api.get("api/hello");
+//   console.log(data);
 //   return {
 //     props: {
 //       mongo: process.env.MONGO_URI,
-//       baseURL: process.env.BASE_URL,
+//       baseURL: process.env.URL,
+//       data: data,
 //     },
 //   };
 // }
 
-// export const getServerSideProps: GetServerSideProps = async (context) => {
-//   await connectMongo();
-//   const { data } = await api.get('api');
-
-//   return {
-//     props: {
-//       data: data.data,
-//     }
-//   }
-// }
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { data } = await api.get('/api/');
+  return {
+    props: {
+      data: data.data,
+    }
+  }
+}

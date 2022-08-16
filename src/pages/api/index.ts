@@ -1,10 +1,13 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { User } from "../../models/User";
+import connectMongo from '../../utils/connectMongo';
 
 type Response = {
     message: string;
     data?: User.UserData | null;
 }
+
+connectMongo();
 
 export default function handler(
   req: NextApiRequest,
