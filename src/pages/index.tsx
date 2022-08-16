@@ -28,6 +28,7 @@ export default function Home(props: Props) {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   await connectMongo();
   const { data } = await api.get('api');
+  mongoose.disconnect();
 
   return {
     props: {

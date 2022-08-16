@@ -13,7 +13,7 @@ const connectMongo = async () => {
 
   await mongoose.connect(`${mongoURI}`).then(() => {
     console.log("Mongoose is connected");
-  });
+  });  
 };
 
 export default connectMongo;
