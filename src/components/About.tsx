@@ -1,13 +1,9 @@
 import React from "react";
 import { Box, Container, Flex, Heading, List, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 import CustomIcon from './CustomIcon';
+import userData from '../data/about';
 
-interface Props {
-  data: User.UserData;
-}
-
-const About: React.FC<Props> = (props) => {
-  const userData = props.data;
+const About: React.FC = () => {
 
   return (
     <Box minH={"50vh"} h={"100vh"} bg={"brand.300"} id="about" textColor={"brand.500"}>

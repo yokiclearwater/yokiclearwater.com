@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import Typewriter from "typewriter-effect";
 import GLOBE from '../scripts/vanta.globe.js';
 import * as THREE from '../scripts/three';
-import { Theme } from "@chakra-ui/react";
 
 const LandingPage: React.FC = () => {
   const vantaRef = useRef(null);
