@@ -20,28 +20,13 @@ export default function Home(props: Props) {
 
   return (
     <>
-      <Box fontSize={"5xl"} textColor={"green.600"}>{userData.description}</Box>
-      {/* <Box fontSize={"5xl"} textColor={"red.600"}>{props.URL}</Box>
-      <Box fontSize={"5xl"} textColor={"blue."}>{props.data.name}</Box> */}
-      {/* <Layout>
+      <Layout>
         <LandingPage />
         <About data={props.data[0]}/>
-      </Layout> */}
+      </Layout>
     </>
   );
 }
-
-// export const getServerSideProps: GetServerSideProps = async (context) => {
-//   const { data } = await api.get("api/hello");
-//   console.log(data);
-//   return {
-//     props: {
-//       mongo: process.env.MONGO_URI,
-//       baseURL: process.env.URL,
-//       data: data,
-//     },
-//   };
-// }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { data } = await api.get('/api/');
