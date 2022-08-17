@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Container, Flex, Heading, List, ListItem, Text, UnorderedList } from "@chakra-ui/react";
-import CustomIcon from './CustomIcon';
 import userData from '../data/about';
 
 const About: React.FC = () => {
@@ -29,7 +28,7 @@ const About: React.FC = () => {
         </Heading>
         <Flex my={6} py={6} fontSize={["2xl", "3xl", "4xl"]} gap={4} flexWrap={"wrap"}>
           {userData.hobbies.map((hobby, index) => (<Flex key={index} bg={"brand.100"} w={"fit-content"} p={4} borderRadius={8} alignItems={"center"} justifyContent={"center"} gap={4} fontStyle={"italic"} shadow={"lg"}>
-            <CustomIcon name={hobby.icon} />
+            <hobby.icon />
             {hobby.name}
           </Flex>))}
         </Flex>

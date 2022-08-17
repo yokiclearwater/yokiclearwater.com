@@ -1,15 +1,26 @@
+import { BsFillCpuFill } from "react-icons/bs";
+import { FaGuitar } from "react-icons/fa";
+import { SiApplemusic, SiMyanimelist, SiVisualstudiocode } from "react-icons/si";
 
 
-const data: User.UserData  = {
-    "description": "I'm Kosal (yokiclearwater). I love web development and alogorithm. I've been coding for almost 2 years now. I'm a self-taught programmer and I'm always looking for new technologies to learn.",
+const data  = {
+    "description": "I'm Kosal or you might just know me yokiclearwater. I'm an introverted person who really like doing computer stuffs. I'm always looking for new technologies to learn. So this is my journey to become a better programmer. </>",
     "hobbies": [
         {
             "name": "Programming",
-            "icon": "SiVisualstudiocode",
+            "icon": SiVisualstudiocode,
         },
         {
             "name": "Music",
-            "icon": "SiApplemusic",
+            "icon": FaGuitar,
+        },
+        {
+            "name": "Anime",
+            "icon": SiMyanimelist,
+        },
+        {
+            "name": "Technology",
+            "icon": BsFillCpuFill,
         },
     ]
 }
