@@ -12,6 +12,7 @@
     "@chakra-ui/react": "^2.2.8",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
+    "@types/react-vertical-timeline-component": "^3.3.3",
     "axios": "^0.27.2",
     "framer-motion": "^7.1.1",
     "mongoose": "^6.5.2",
@@ -19,6 +20,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
+    "react-vertical-timeline-component": "^3.5.2",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

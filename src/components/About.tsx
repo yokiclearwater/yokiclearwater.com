@@ -6,7 +6,7 @@ import userData from '../data/about';
 const About: React.FC = () => {
 
   return (
-    <Box minH={"50vh"} h={"100vh"} bg={"brand.300"} id="about" textColor={"brand.500"}>
+    <Box bg={"brand.300"} id="about" textColor={"brand.500"}>
       <Box w={["85%", "80%"]} m={"auto"} py={[10, 10, 20, 100]}>
         <Heading
           as={"h1"}
