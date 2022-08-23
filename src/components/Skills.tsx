@@ -20,11 +20,11 @@ const Skills = (props: Props) => {
             <Flex key={index} flexDir={"column"} gap={12}>
               <Heading
                 as={"h1"}
-                fontSize={["4xl", "5xl", "6xl", "7xl"]}
+                fontSize={["3xl", "4xl", "5xl", "6xl"]}
                 w={"fit-content"}
                 textTransform={"lowercase"}
               >
-                {skill.title}
+                {skill.title}...
               </Heading>
               <Wrap spacing={[6, 8, 12, 16]} justify={"center"} bg={"white"} p={8} borderRadius={"xl"}>
                 {skill.items.map((item, index) => (
