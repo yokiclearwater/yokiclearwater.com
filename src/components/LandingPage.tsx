@@ -60,7 +60,7 @@ const LandingPage: React.FC = () => {
           Yon KimKosal
         </Text>
         <br />
-        also known as {""}
+        better known as {""}
         <Text
           as={"span"}
           fontWeight={"bold"}
