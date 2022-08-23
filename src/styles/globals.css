@@ -4,9 +4,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Fira Sans', sans-serif;
   scroll-behavior: smooth;
-
 }
 
 a {
@@ -16,6 +14,7 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif !important;
 }
 
 @media (prefers-color-scheme: dark) {
