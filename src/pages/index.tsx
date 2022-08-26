@@ -4,6 +4,7 @@ import About from './../components/About';
 import Timeline from "../components/Timeline";
 import ContactForm from "../components/ContactForm";
 import Skills from "../components/Skills";
+import Footer from './../components/Footer';
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
         <About />
         <Timeline />
         <Skills />
+        <Footer />
       </Layout>
     </>
   );

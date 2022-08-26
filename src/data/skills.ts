@@ -34,6 +34,10 @@ export const skills = [
         name: "Firebase",
         image: "firebase.svg",
       },  
+      {
+        name: "Stack Overflow",
+        image: "stackoverflow.svg",
+      }
     ],
   },
   {
