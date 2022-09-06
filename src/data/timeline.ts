@@ -6,10 +6,10 @@ import { FaSchool } from "react-icons/fa";
 export const timelineData = [
     {
         title: "Web Developer Intern",
-        location: "N/A",
+        location: "Sihanoukville Port Autonomous, Shihanoukville",
         date: "Sep 2022 - Dec 2022",
         icon: ImOffice,
-        description: "N/A",
+        description: "Building Inventory Management System in progress...",
     },
     {
         title: "CS Student",
